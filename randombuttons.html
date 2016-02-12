@@ -3,6 +3,17 @@
 <html>
     <!--the following code allows you to change background color and the arrangement of the divs-->
     <style>
+    navbar{
+    text-align:center;
+    
+}
+
+#navbar li{
+    display:inline-block;
+    border:2px solid black;
+    padding:5px;
+    
+}
     body {
             background-color:#3B3176;
         }
@@ -13,9 +24,19 @@
     margin: 100px;
 }
 
-
+.navbar {
+    color: black;
+}
     </style>
 <body>
+          <ul id="navbar">
+            <li><a href="index.html" class="navbar"> Welcome</></li>
+            <li><a href="aboutme.html" class="navbar">All About Me</a></li>
+            <li><a href="hardware.html" class="navbar">Hardware</a></li>
+            <li><a href="htmlcss.html" class="navbar">HTML and CSS</a></li>
+            <li><a href="info.html" class="navbar"> info page</a></li>
+            <li><a href="calc.html" class="navbar">Calculator</a> </li>
+            <li><a href="randombuttons.html" class="navbar">Weird game quotes</a></li>
     <!--The following divs create buttons that when clicked display something-->
     <div> 
     <button id="button1" onclick="myFunction()">Stanley Parable</button>
