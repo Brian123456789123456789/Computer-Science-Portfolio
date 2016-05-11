@@ -32,7 +32,7 @@ function doMath() {
     //This if statement allows you to  apply an exponent to a variable
    if  (dropdown.value == "^"){
        answer=Math.pow(parseInt(input1.value), parseInt(input2.value));
-        display.innerHTML = answer
+        display.innerHTML = answer;
     }
     //This if statement allows you to ind the square root of a number
     if  (dropdown.value == "√"){
