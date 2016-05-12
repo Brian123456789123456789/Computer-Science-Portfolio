@@ -12,9 +12,9 @@ form.addEventListener( 'submit', function(evt) {
 
 todo.addEventListener( 'click', function(evt) {
   var tar = evt.target;
-  //document.getElementById("todolist").style.textDecoration = "line-through";
+  ///document.getElementById("todolist").style.textDecoration = "line-through";
   tar.style.textDecoration = "line-through";
-  if (tar.syle.textDecoration === "line-through") {
+  if (tar.style.textDecoration === "line-through") {
   tar.parentNode.removeChild(tar);
   }
   evt.preventDefault();
