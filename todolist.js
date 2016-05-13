@@ -12,10 +12,15 @@ form.addEventListener( 'submit', function(evt) {
 
 todo.addEventListener( 'click', function(evt) {
   var tar = evt.target;
-  ///document.getElementById("todolist").style.textDecoration = "line-through";
-  tar.style.textDecoration = "line-through";
+  
   if (tar.style.textDecoration === "line-through") {
   tar.parentNode.removeChild(tar);
+  }else if(tar.style.textDecoration === "underline"){
+    tar.style.textDecoration = "line-through"
   }
+  else{
+    tar.style.textDecoration = "underline" 
+  }
+  
   evt.preventDefault();
 }, false);
